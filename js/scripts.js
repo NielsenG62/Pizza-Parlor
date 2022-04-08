@@ -16,6 +16,20 @@ Pizza.prototype.sizePrice = function () {
 };
 
 Pizza.prototype.toppingPrice = function () {
-  let price = this.toppings.length;
-  return price;
+  debugger;
+  let price = 0;
+  let toppings = this.toppings;
+  for (i = 0; i < this.toppings.length; i++) {
+    if (
+      toppings[i] === "pepperoni" ||
+      toppings[i] === "sausage" ||
+      toppings[i] === "ham" ||
+      toppings[i] === "bacon"
+    ) {
+      price += 1.5;
+    } else {
+      price += 1.0;
+    }
+  }
+  return price.toFixed(2);
 };
