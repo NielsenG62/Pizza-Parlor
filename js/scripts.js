@@ -37,3 +37,18 @@ Pizza.prototype.priceCalc = function () {
   let price = this.sizePrice() + this.toppingPrice();
   return price.toFixed(2);
 };
+
+// UI Logic
+
+$("document").ready(function () {
+  $("form").submit(function (event) {
+    event.preventDefault();
+    const size = $("#size").val();
+    const toppings = $("input:checked").map(function () {
+      return $(this).val();
+    });
+    const pizza = new Pizza(toppings, size);
+    pizza.priceCalc();
+    console.log(pizza.priceCalc());
+  });
+});

@@ -48,7 +48,7 @@
     <div class="container">
       <h2>Complete your order</h2>
       <form>
-        <select class="form-select" aria-label="Size">
+        <select required class="form-select" aria-label="Size" id="size">
           <option selected disabled>---Size---</option>
           <option value="small">Small</option>
           <option value="medium">Medium</option>
@@ -148,7 +148,7 @@
           <label class="form-check-label" for="pineapple">Pineapple</label>
         </div>
         <p>Order Total: $<span id="total"></span></p>
-        <button type="button" class="btn btn-success">Complete Order</button>
+        <button type="submit" class="btn btn-success">Complete Order</button>
       </form>
       <div id="results">
         <p>Thank you! Your pizza will be ready shortly.</p>
