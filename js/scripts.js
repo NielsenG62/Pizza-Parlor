@@ -61,6 +61,7 @@ $("document").ready(function () {
     } else {
       $("#results p").text("Thank you! Your pizza will be ready shortly.");
       $("#results p").removeClass("error");
+      $("img").attr("src", "img/pizza-dance.gif");
     }
     $("#results").removeClass("hidden");
   });

@@ -4,6 +4,8 @@
 
 .error {
   color: #cd212a;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 body {
@@ -70,7 +72,7 @@ h5 {
 }
 
 #order {
-  margin-top: 1em;
+  margin-top: 2em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -78,4 +80,11 @@ h5 {
 
 #results {
   margin-top: 1em;
+}
+
+img {
+  margin: auto;
+  display: block;
+  margin-top: 3em;
+  width: 390px;
 }
