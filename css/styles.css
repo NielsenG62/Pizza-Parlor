@@ -5,3 +5,77 @@
 .error {
   color: red;
 }
+
+body {
+  background-color: green;
+}
+
+.container {
+  margin-top: 1em;
+  background-color: white;
+  padding: 2em;
+  padding-bottom: 3em;
+}
+
+nav {
+  padding: 1em;
+  background-color: red;
+}
+
+h1 {
+  position: absolute;
+  left: 25px;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: green;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+#size {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+p {
+  text-align: center;
+}
+
+#meats {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+#other {
+  text-align: center;
+}
+
+#order {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#results {
+  margin-top: 1em;
+}

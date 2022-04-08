@@ -26,8 +26,10 @@
   </head>
   <body>
     <nav>
-      <h1>R&sup2;</h1>
       <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <h1>R&sup2;</h1>
+        </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
@@ -55,104 +57,111 @@
           <option value="large">Large</option>
         </select>
         <h3>Toppings</h3>
-        <h4>Meats: $1.50 each</h4>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="pepperoni"
-            value="pepperoni"
-          />
-          <label class="form-check-label" for="pepperoni">Pepperoni</label>
+        <p>All pizzas default to cheese unless toppings are added.</p>
+        <div id="meats">
+          <h4>Meats: $1.50 each</h4>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="pepperoni"
+              value="pepperoni"
+            />
+            <label class="form-check-label" for="pepperoni">Pepperoni</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="sausage"
+              value="sausage"
+            />
+            <label class="form-check-label" for="sausage">Sausage</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="bacon"
+              value="bacon"
+            />
+            <label class="form-check-label" for="bacon">Bacon</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="ham"
+              value="ham"
+            />
+            <label class="form-check-label" for="ham">Ham</label>
+          </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="sausage"
-            value="sausage"
-          />
-          <label class="form-check-label" for="sausage">Sausage</label>
+        <div id="other">
+          <h4>Other Toppings: $1.00 each</h4>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="mushroom"
+              value="mushroom"
+            />
+            <label class="form-check-label" for="mushroom">Mushrooms</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="onion"
+              value="onion"
+            />
+            <label class="form-check-label" for="onion">Onion</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="olives"
+              value="olives"
+            />
+            <label class="form-check-label" for="olives">Olives</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="peppers"
+              value="peppers"
+            />
+            <label class="form-check-label" for="peppers">Peppers</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="tomato"
+              value="tomato"
+            />
+            <label class="form-check-label" for="tomato">Tomatoes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="pineapple"
+              value="pineapple"
+            />
+            <label class="form-check-label" for="pineapple">Pineapple</label>
+          </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="bacon"
-            value="bacon"
-          />
-          <label class="form-check-label" for="bacon">Bacon</label>
+        <div id="results" class="hidden">
+          <p></p>
         </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="ham"
-            value="ham"
-          />
-          <label class="form-check-label" for="ham">Ham</label>
+        <div id="order">
+          <h5>Order Total: $<span id="total">0</span></h5>
+          <button type="submit" class="btn btn-success">Complete Order</button>
         </div>
-        <h4>Other Toppings: $1.00 each</h4>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="mushroom"
-            value="mushroom"
-          />
-          <label class="form-check-label" for="mushroom">Mushrooms</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="onion"
-            value="onion"
-          />
-          <label class="form-check-label" for="onion">Onion</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="olives"
-            value="olives"
-          />
-          <label class="form-check-label" for="olives">Olives</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="peppers"
-            value="peppers"
-          />
-          <label class="form-check-label" for="peppers">Peppers</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="tomato"
-            value="tomato"
-          />
-          <label class="form-check-label" for="tomato">Tomatoes</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="pineapple"
-            value="pineapple"
-          />
-          <label class="form-check-label" for="pineapple">Pineapple</label>
-        </div>
-        <h5>Order Total: $<span id="total">0</span></h5>
-        <button type="submit" class="btn btn-success">Complete Order</button>
       </form>
-      <div id="results" class="hidden">
-        <p></p>
-      </div>
     </div>
   </body>
 </html>
