@@ -24,6 +24,8 @@ _This webpage is for a fictional pizza parlor to order your pizza. The user can 
 
 ## Link to project on GitHub Pages
 
+https://nielseng62.github.io/Pizza-Parlor
+
 ## Known Bugs
 
 - _None that I know of as of this commit._
