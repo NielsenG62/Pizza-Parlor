@@ -1,3 +1,39 @@
+# _Pizza Parlor Website_
+
+#### By _**Gabe Nielsen**_
+
+#### _A site to order pizzas_
+
+## Technologies Used
+
+- _HTML_
+- _CSS_
+- _Bootstrap_
+- _JavaScript_
+- _jQuery_
+
+## Description
+
+_This webpage is for a fictional pizza parlor to order your pizza. The user can select a size and choice of toppings. There is a price counter that automatically updates the price of the pizza whenever there is a change to it. On submission, an error occurs if there was not a size chosen, or a thank you message appears._
+
+## Setup/Installation Requirements
+
+- _Clone this repository_
+- _Navigate to the top level of this directory_
+- _Open index.html in your browser of choice_
+
+## Link to project on GitHub Pages
+
+## Known Bugs
+
+- _None that I know of as of this commit._
+
+## License
+
+Copyright (c) _2022_ _Gabe Nielsen_
+
+## Specs:
+
 ```javascript
 Describe: Pizza()
 
