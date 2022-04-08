@@ -33,5 +33,5 @@ Describe Pizza.prototype.priceCalc()
 Test: "It should calculate the total cost of the pizza"
 Code: const pizza = new Pizza (["pepperoni", "onions"], "medium")
       pizza.priceCalc()
-Expected Output: 12.50
+Expected Output: "12.50"
 ```
