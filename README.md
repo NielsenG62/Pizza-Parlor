@@ -11,7 +11,6 @@ Describe: Pizza.prototype.sizePrice(size)
 
 Test: "It should calculate the price based on the size of the pizza"
 Code: const pizza = new Pizza (["pepperoni", "sausage"], "medium")
-      pizza.sizePrice(medium)
-      console.log(size.price)
+      pizza.sizePrice()
 Expected Output: 10
 ```
