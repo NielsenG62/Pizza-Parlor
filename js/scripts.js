@@ -48,7 +48,8 @@ $("document").ready(function () {
       return $(this).val();
     });
     const pizza = new Pizza(toppings, size);
-    pizza.priceCalc();
-    console.log(pizza.priceCalc());
+    const price = pizza.priceCalc();
+    $("#total").text(price);
+    $("#results").removeClass("hidden");
   });
 });
