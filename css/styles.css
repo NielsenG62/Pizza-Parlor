@@ -3,37 +3,37 @@
 }
 
 .error {
-  color: red;
+  color: #cd212a;
 }
 
 body {
-  background-color: green;
+  background-color: #008c45;
 }
 
 .container {
   margin-top: 1em;
-  background-color: white;
+  background-color: #f4f9ff;
   padding: 2em;
   padding-bottom: 3em;
 }
 
 nav {
   padding: 1em;
-  background-color: red;
+  background-color: #cd212a;
 }
 
 h1 {
   position: absolute;
   left: 25px;
-  color: white;
+  color: #f4f9ff;
 }
 
 .nav-link {
-  color: white;
+  color: #f4f9ff;
 }
 
 .nav-link:hover {
-  color: green;
+  color: #797979;
 }
 
 h2,
