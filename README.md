@@ -2,6 +2,7 @@
 Describe: Pizza()
 
 Test: "It should return a pizza object with properties for toppings and size"
-Code: const myPizza = new Pizza {["pepperoni", "sausage"], "medium"}
+Code: const myPizza = new Pizza (["pepperoni", "sausage"], "medium")
+      myPizza;
 Expected Output: Pizza {toppings: ["pepperoni", "sausage"], size: "medium"}
 ```
