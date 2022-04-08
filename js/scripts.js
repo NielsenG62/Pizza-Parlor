@@ -14,3 +14,8 @@ Pizza.prototype.sizePrice = function () {
   }
   return price;
 };
+
+Pizza.prototype.toppingPrice = function () {
+  let price = this.toppings.length;
+  return price;
+};

@@ -20,5 +20,5 @@ Describe: Pizza.prototype.toppingPrice(size)
 Test: "It should calculate the price based on the toppings on the pizza"
 Code: const pizza = new Pizza (["pepperoni", "sausage"], "medium")
       pizza.toppingPrice()
-Expected Output: 12
+Expected Output: 2
 ```
