@@ -40,16 +40,37 @@ Pizza.prototype.priceCalc = function () {
 
 // UI Logic
 
+function pizzaBuild() {
+  const size = $("#size").val();
+  const toppings = $("input:checked").map(function () {
+    return $(this).val();
+  });
+  const pizza = new Pizza(toppings, size);
+  const price = pizza.priceCalc();
+  $("#total").text(price);
+  return price;
+}
+
 $("document").ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
-    const size = $("#size").val();
-    const toppings = $("input:checked").map(function () {
-      return $(this).val();
-    });
-    const pizza = new Pizza(toppings, size);
-    const price = pizza.priceCalc();
-    $("#total").text(price);
+    // const size = $("#size").val();
+    // const toppings = $("input:checked").map(function () {
+    //   return $(this).val();
+    // });
+    // const pizza = new Pizza(toppings, size);
+    // const price = pizza.priceCalc();
+    const price = pizzaBuild();
+    if ($("#size option:selected").val() === "null") {
+      $("#results p").text("Please select a size for your pizza");
+      $("#results p").addClass("error");
+    } else {
+      $("#results p").text("Thank you! Your pizza will be ready shortly.");
+      $("#results p").removeClass("error");
+    }
     $("#results").removeClass("hidden");
+  });
+  $("html").change(function () {
+    pizzaBuild();
   });
 });
